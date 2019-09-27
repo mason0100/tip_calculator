@@ -61,15 +61,8 @@ class MainActivity : AppCompatActivity() {
         var totalCheckStr: String = decForm.format(totalCheck);  //totalCheck.toString();
 
 
-
-        tipOutputTextView.text = tipAmountStr;
-        totalOutputTextView.text = totalCheckStr;
-
-        resultTextView1.setVisibility(View.VISIBLE);
-        tipOutputTextView.setVisibility(View.VISIBLE);
-        resultTextView2.setVisibility(View.VISIBLE);
-        totalOutputTextView.setVisibility(View.VISIBLE);
-
+        outputViewText.text = "You calculated tip is " + tipAmountStr + " and you calculated total is " + totalCheckStr + ".";
+        outputViewText.setVisibility(View.VISIBLE);
 
     }//end handleClick()
 
